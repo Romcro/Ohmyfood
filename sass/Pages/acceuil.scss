@@ -1,0 +1,22 @@
+main {
+
+
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+}
+.card {
+
+    @include box-shadow;
+    width: 25%;
+    margin:2% 10%;
+    height: 80vh;
+
+
+
+
+}
+
