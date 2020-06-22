@@ -1,0 +1,16 @@
+footer {
+
+    background-color: $couleur-hd-ft;
+    color: yellow;
+    position:fixed;
+    bottom: 0px;
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 0;
+
+    a {
+
+        padding: 0 2%;
+    }
+}
