@@ -1,0 +1,33 @@
+nav {
+
+
+    padding: 2%;
+    margin:2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+
+a {
+
+    @include box-shadow;
+    width: 30%;
+    margin:2% 10%;
+    height: 80vh;
+
+   
+
+}
+
+}
+
+#comingsoon {
+
+    background: $couleur-hd-ft;
+    padding: 10px;
+    border-radius: 20px;
+
+
+
+}
