@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;400&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 2em;
+  font-family: "Krona One", sans-serif;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+p {
+  font-family: "MuseoModerno", cursive;
+}
+
+a {
+  text-decoration: none;
+  font-family: "MuseoModerno", cursive;
+  color: yellow;
+}
+
+header {
+  background-color: green;
+  text-align: center;
+  color: yellow;
+  padding: 2% 0;
+}
+
+footer {
+  background-color: green;
+  color: yellow;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2% 0;
+}
+footer a {
+  padding: 0 2%;
+}
+
+main {
+  padding: 2%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card {
+  box-shadow: 0px 1px 9px 1px #737171;
+  width: 25%;
+  margin: 2% 10%;
+  height: 80vh;
+}
+
+/*# sourceMappingURL=style.css.map */
