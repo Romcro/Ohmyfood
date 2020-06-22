@@ -5,24 +5,19 @@
   padding: 0;
   font-size: 14px;
 }
-
-h1 {
+* h1 {
   font-size: 2em;
   font-family: "Krona One", sans-serif;
 }
-
-h2 {
+* h2 {
   font-size: 1.5em;
 }
-
-p {
+* p {
   font-family: "MuseoModerno", cursive;
 }
-
-a {
+* a {
   text-decoration: none;
   font-family: "MuseoModerno", cursive;
-  color: yellow;
 }
 
 header {
@@ -44,19 +39,21 @@ footer {
 }
 footer a {
   padding: 0 2%;
+  color: yellow;
 }
 
 main {
   padding: 2%;
+  margin: 2% 10%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 
 .card {
   box-shadow: 0px 1px 9px 1px #737171;
   width: 25%;
-  margin: 2% 10%;
+  margin: 2%;
   height: 80vh;
 }
 
