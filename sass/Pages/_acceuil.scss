@@ -1,4 +1,4 @@
-nav {
+main {
 
 
     padding: 2%;
@@ -9,12 +9,14 @@ nav {
 
 
 
-a {
+div {
 
     @include box-shadow;
     width: 30%;
     margin:2% 10%;
     height: 80vh;
+ 
+    
 
    
 
@@ -22,12 +24,15 @@ a {
 
 }
 
+#bouton {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 #comingsoon {
 
-    background: $couleur-hd-ft;
-    padding: 10px;
-    border-radius: 20px;
-
-
+@include buton ($couleur-hd-ft)
 
 }

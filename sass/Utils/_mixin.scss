@@ -5,9 +5,9 @@
     
 }
 
-@mixin buton ($couleur-hd-ft) {
+@mixin buton ($color) {
 
-    background: $couleur-hd-ft;
+    background: $color;
     padding: 10px;
     border-radius: 20px;
     
@@ -17,22 +17,21 @@
 
     animation: wiggle 2.5s infinite;
 
-    @keyframes wiggle {
-        0% { transform: rotate(0deg); }
-        20% { transform: rotate(0deg); }
-        25% { transform: rotate(5deg); }
-        35% { transform: rotate(-5deg); }
-       40% { transform: rotate(5deg); }
-       45% { transform: rotate(-5deg); }
-       50% { transform: rotate(0deg); }       
-       80% { transform: rotate(0deg); }
-       85% { transform: rotate(5deg); }
-       95% { transform: rotate(-5deg); }
-      100% { transform: rotate(0deg); }
-    
-    
-    
-    }
+}
+
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(0deg); }
+    25% { transform: rotate(5deg); }
+    35% { transform: rotate(-5deg); }
+   40% { transform: rotate(5deg); }
+   45% { transform: rotate(-5deg); }
+   50% { transform: rotate(0deg); }       
+   80% { transform: rotate(0deg); }
+   85% { transform: rotate(5deg); }
+   95% { transform: rotate(-5deg); }
+  100% { transform: rotate(0deg); }
+
 
 
 }

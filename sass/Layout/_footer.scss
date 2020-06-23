@@ -18,21 +18,8 @@ footer {
 
     &:hover {
 
-   
-        animation: wiggle 2.5s infinite;
+   @include wiggle;
 
-        @keyframes wiggle {
-            0% { transform: rotate(0deg); }
-            20% { transform: rotate(0deg); }
-            25% { transform: rotate(5deg); }
-            35% { transform: rotate(-5deg); }
-           40% { transform: rotate(5deg); }
-           45% { transform: rotate(-5deg); }
-           50% { transform: rotate(0deg); }       
-           80% { transform: rotate(0deg); }
-           85% { transform: rotate(5deg); }
-           95% { transform: rotate(-5deg); }
-          100% { transform: rotate(0deg); }
         
         
         
@@ -41,6 +28,6 @@ footer {
 
 }
 
-}
+
 
 

@@ -80,18 +80,24 @@ footer a:hover {
   }
 }
 
-nav {
+main {
   padding: 2%;
   margin: 2%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-nav a {
+main div {
   box-shadow: 0px 1px 9px 1px #737171;
   width: 30%;
   margin: 2% 10%;
   height: 80vh;
+}
+
+#bouton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #comingsoon {
