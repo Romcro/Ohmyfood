@@ -36,6 +36,25 @@
 
 }
 
+@mixin scale {
+
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 600ms;
+
+}
+
+@mixin scalehover {
+    
+    transform: scale(1.4)
+}
+
+
+
+
+
+
+
 
 
 
