@@ -76,10 +76,12 @@ text-align: center;
         background: -webkit-linear-gradient(#eee, #333);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-family: 'Dancing Script', cursive;
-    
+        
+    }
 
+    & h2 {
 
+        font-family: 'Pangolin', cursive;
     }
 
 }    
@@ -89,16 +91,19 @@ text-align: center;
 #divlechic
  {
 
-    background-color:yellow;
+    background-color:greenyellow;
 
     h2,p {
 
-        background: -webkit-linear-gradient(#eee, #333);
+        background: -webkit-linear-gradient(red 0%, orange 10%, orange 30%, yellow 50%, yellow 70%, green 90%, green 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-family: 'Dancing Script', cursive;
+        
     
+    }
 
+    & h2 {
+        font-family: 'Caveat', cursive;
 
     }
 
@@ -113,18 +118,23 @@ text-align: center;
 
     h2,p {
 
-        background: -webkit-linear-gradient(#eee, #333);
+        background: -webkit-linear-gradient(red 40%, yellow 30%, blue 65%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-family: 'Dancing Script', cursive;
+        
     
 
 
     }
 
+    & h2 {
+
+        font-family: 'Dancing Script', cursive;
+    }
+
 } 
 
-/***** la note enchantée ****/
+/***** la palette ****/
 
 #divlapalette 
  {
@@ -133,13 +143,18 @@ text-align: center;
 
     h2,p {
 
-        background: -webkit-linear-gradient(#eee, #333);
+        background: -webkit-linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        font-family: 'Dancing Script', cursive;
+        
     
 
 
+    }
+
+    & h2 {
+
+        font-family: 'Courgette', cursive;
     }
 
 } 
