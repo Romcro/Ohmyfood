@@ -5,15 +5,43 @@
     
 }
 
+@mixin center {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
 @mixin buton ($color) {
 
     background: $color;
     padding:  5px 25px;
     border-radius: 40px;
-  
-    
+   
+}
+
+@mixin gradient-text {
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@mixin main-menu {
+
+    width: 80%;
+    margin: 2% 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    @include box-shadow;
+   
     
 }
+
+/*** ANIMATIONS CSS ***/
 
 @mixin wiggle {
 
@@ -53,14 +81,8 @@
     opacity: 0.5;
 }
 
-@mixin center {
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    
-}
 
 
 

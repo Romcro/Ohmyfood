@@ -2,62 +2,58 @@ main {
 
 
     padding: 2%;
-    margin:2%;
+    margin: 2%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 
 
 
-div {
+    div {
 
-    @include box-shadow;
-    width: 30%;
-    margin:2% 10%;
-    height: 80vh;
-}
-
-a {
-
-    width: 100%;
-    height: 100%;
-    @include center;
-
-    h2 {
-
-        font-size: 2.5em;
+        @include box-shadow;
+        width: 30%;
+        margin: 2% 10%;
+        height: 80vh;
     }
 
-    p {
+    a {
 
-        font-size: 1.5em;
+        width: 100%;
+        height: 100%;
+        @include center;
+
+        h2 {
+
+            font-size: 2.5em;
+        }
+
+        p {
+
+            font-size: 1.5em;
+        }
+
+        &:hover article {
+
+            @include scalehover;
+
+        }
+
     }
 
 
 
+    article {
 
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        height: auto;
+        text-align: center;
+        @include scale;
 
-    &:hover article{
-
-        @include scalehover;
-       
     }
-
-}
-
-
-
-article {
-
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-height: auto;
-text-align: center;
-@include scale;
-
-}
 
 
 }
@@ -66,17 +62,16 @@ text-align: center;
 
 /***** la note enchantée ****/
 
-#divlanote 
- {
+#divlanote {
 
-    background-color:red;
+    background-color: $couleur-lanote;
 
-    h2,p {
+    h2,
+    p {
 
-        background: -webkit-linear-gradient(#eee, #333);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        
+        background: $couleur-txt-lanote;
+        @include gradient-text;
+
     }
 
     & h2 {
@@ -84,22 +79,21 @@ text-align: center;
         font-family: 'Pangolin', cursive;
     }
 
-}    
+}
 
 /***** Le chic à la française ****/
 
-#divlechic
- {
+#divlechic {
 
-    background-color:greenyellow;
+    background-color:$couleur-lechic;
 
-    h2,p {
+    h2,
+    p {
 
-        background: -webkit-linear-gradient(red 0%, orange 10%, orange 30%, yellow 50%, yellow 70%, green 90%, green 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        
-    
+        background: $couleur-txt-lechic;
+        @include gradient-text;
+
+
     }
 
     & h2 {
@@ -107,22 +101,21 @@ text-align: center;
 
     }
 
-} 
+}
 
 /***** la note enchantée ****/
 
-#divledelice 
- {
+#divledelice {
 
-    background-color: blueviolet;
+    background-color: $couleur-ledelice;
 
-    h2,p {
+    h2,
+    p {
 
-        background: -webkit-linear-gradient(red 40%, yellow 30%, blue 65%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        
-    
+        background:$couleur-txt-ledelice;
+        @include gradient-text;
+
+
 
 
     }
@@ -132,22 +125,22 @@ text-align: center;
         font-family: 'Dancing Script', cursive;
     }
 
-} 
+}
 
 /***** la palette ****/
 
-#divlapalette 
- {
+#divlapalette {
 
-    background-color: green;
+    background-color: $couleur-lapalette;
 
-    h2,p {
+    h2,
+    p {
 
-        background: -webkit-linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        
-    
+        background: $couleur-txt-lapalette;
+        @include gradient-text;
+ 
+
+
 
 
     }
@@ -157,13 +150,13 @@ text-align: center;
         font-family: 'Courgette', cursive;
     }
 
-} 
+}
 
 
 #containerbuton {
 
-margin-bottom: 200px;
-@include center;
+    margin-bottom: 200px;
+    @include center;
 
 
 
@@ -171,70 +164,114 @@ margin-bottom: 200px;
 
 #comingsoon {
 
-@include buton ($couleur-hd-ft);
-color: $couleur-txt-dyn;
-@include center;
- p{
+    @include buton ($couleur-hd-ft);
+    color: $couleur-txt-dyn;
+    @include center;
 
-    font-size: 2em;
- }
+    p {
 
- &:hover {
+        font-size: 2em;
+    }
 
-    
- }
+    &:hover {}
 
 
 
 
 }
 
-.dot { 
-   
+.dot {
+
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    margin:2px;
+    margin: 2px;
     background-color: $couleur-txt-dyn;
 
- }
+}
 
 #dotone {
 
     animation: bounce1 1s ease infinite;
- }
+}
 
- @keyframes bounce1 {
-    0%   { transform: scale(1,1)    translateY(0); }
-    10%  { transform: scale(1.1,.9) translateY(0); }
-    30%  { transform: scale(.9,1.1) translateY(-5px); }
-    50%  { transform: scale(1,1)    translateY(0); }
-    100% { transform: scale(1,1)    translateY(0); }
+@keyframes bounce1 {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+
+    30% {
+        transform: scale(.9, 1.1) translateY(-5px);
+    }
+
+    50% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
 }
 
 #dottwo {
 
     animation: bounce2 1s ease infinite;
- }
+}
 
- @keyframes bounce2 {
-    0%   { transform: scale(1,1)    translateY(0); }
-    10%  { transform: scale(1.1) translateY(0); }
-    30%  { transform: scale(1.1,.9)    translateY(0);}
-    50%  { transform:  scale(.9,1.1) translateY(-5px); }
-    100% { transform: scale(1,1)    translateY(0); }
+@keyframes bounce2 {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+        transform: scale(1.1) translateY(0);
+    }
+
+    30% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+
+    50% {
+        transform: scale(.9, 1.1) translateY(-5px);
+    }
+
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
 }
 
 #dotthree {
 
     animation: bounce3 1s ease infinite;
- }
-
- @keyframes bounce3 {
-    0%   { transform: scale(1,1)    translateY(0); }
-    10%  { transform: scale(1.1) translateY(0); }
-    30%  { transform: scale(1,1)    translateY(0); }
-    50%  { transform: scale(1.1,.9)    translateY(0); }
-    70%  { transform:  scale(.9,1.1) translateY(-5px); }
-    100% { transform: scale(1,1)    translateY(0); }
 }
+
+@keyframes bounce3 {
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    10% {
+        transform: scale(1.1) translateY(0);
+    }
+
+    30% {
+        transform: scale(1, 1) translateY(0);
+    }
+
+    50% {
+        transform: scale(1.1, .9) translateY(0);
+    }
+
+    70% {
+        transform: scale(.9, 1.1) translateY(-5px);
+    }
+
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
+

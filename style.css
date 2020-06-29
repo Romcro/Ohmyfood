@@ -1,7 +1,15 @@
 @charset "UTF-8";
+/***** Couleur de base *****/
+/***** Couleur La note Enchantée *****/
+/***** Couleur Le chic à la française *****/
+/***** Couleur Le delice des papilles *****/
+/***** Couleur La palette du gôut *****/
+/*** ANIMATIONS CSS ***/
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&family=MuseoModerno:wght@100;400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Pangolin&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
 @keyframes wiggle {
   0% {
     transform: rotate(0deg);
@@ -138,10 +146,11 @@ main article {
 /***** Couleurs text des div ****/
 /***** la note enchantée ****/
 #divlanote {
-  background-color: red;
+  background-color: #f3ddd8;
 }
-#divlanote h2, #divlanote p {
-  background: -webkit-linear-gradient(#eee, #333);
+#divlanote h2,
+#divlanote p {
+  background: #63401c;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -151,10 +160,11 @@ main article {
 
 /***** Le chic à la française ****/
 #divlechic {
-  background-color: greenyellow;
+  background-color: #f4eff6;
 }
-#divlechic h2, #divlechic p {
-  background: -webkit-linear-gradient(red 0%, orange 10%, orange 30%, yellow 50%, yellow 70%, green 90%, green 100%);
+#divlechic h2,
+#divlechic p {
+  background: -webkit-linear-gradient(0.25turn, #f94358, #750a75);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -164,10 +174,11 @@ main article {
 
 /***** la note enchantée ****/
 #divledelice {
-  background-color: blueviolet;
+  background-color: #fafafa;
 }
-#divledelice h2, #divledelice p {
-  background: -webkit-linear-gradient(red 40%, yellow 30%, blue 65%);
+#divledelice h2,
+#divledelice p {
+  background: -webkit-radial-gradient(#4780d7, #490a75, #3a1d7c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -177,10 +188,11 @@ main article {
 
 /***** la palette ****/
 #divlapalette {
-  background-color: green;
+  background-color: white;
 }
-#divlapalette h2, #divlapalette p {
-  background: -webkit-linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+#divlapalette h2,
+#divlapalette p {
+  background: -webkit-linear-gradient(#53b106 0%, #528906 45%, #54e506 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -280,6 +292,21 @@ main article {
   100% {
     transform: scale(1, 1) translateY(0);
   }
+}
+main {
+  width: 80%;
+  margin: 2% 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 0px 1px 9px 1px #bea98e;
+  background-color: #f3ddd8;
+}
+main span {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=style.css.map */
