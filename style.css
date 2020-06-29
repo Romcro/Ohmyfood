@@ -115,7 +115,7 @@ main a:hover span {
   transform: scale(1.4);
   opacity: 0.5;
 }
-main span {
+main article {
   display: flex;
   flex-direction: column;
   width: 100%;
