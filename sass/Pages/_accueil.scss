@@ -37,15 +37,15 @@ a {
 
 
 
-    &:hover span{
+    &:hover article{
 
         @include scalehover;
        
     }
 
-
-
 }
+
+
 
 article {
 
@@ -61,6 +61,89 @@ text-align: center;
 
 
 }
+
+/***** Couleurs text des div ****/
+
+/***** la note enchantée ****/
+
+#divlanote 
+ {
+
+    background-color:red;
+
+    h2,p {
+
+        background: -webkit-linear-gradient(#eee, #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Dancing Script', cursive;
+    
+
+
+    }
+
+}    
+
+/***** Le chic à la française ****/
+
+#divlechic
+ {
+
+    background-color:yellow;
+
+    h2,p {
+
+        background: -webkit-linear-gradient(#eee, #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Dancing Script', cursive;
+    
+
+
+    }
+
+} 
+
+/***** la note enchantée ****/
+
+#divledelice 
+ {
+
+    background-color: blueviolet;
+
+    h2,p {
+
+        background: -webkit-linear-gradient(#eee, #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Dancing Script', cursive;
+    
+
+
+    }
+
+} 
+
+/***** la note enchantée ****/
+
+#divlapalette 
+ {
+
+    background-color: green;
+
+    h2,p {
+
+        background: -webkit-linear-gradient(#eee, #333);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: 'Dancing Script', cursive;
+    
+
+
+    }
+
+} 
+
 
 #containerbuton {
 

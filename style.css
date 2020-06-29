@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Krona+One&family=MuseoModerno:wght@100;400&display=swap");
 @keyframes wiggle {
   0% {
@@ -93,7 +94,7 @@ main {
   justify-content: space-between;
 }
 main div {
-  box-shadow: 0px 1px 9px 1px #737171;
+  box-shadow: 0px 1px 9px 1px #bea98e;
   width: 30%;
   margin: 2% 10%;
   height: 80vh;
@@ -111,7 +112,7 @@ main a h2 {
 main a p {
   font-size: 1.5em;
 }
-main a:hover span {
+main a:hover article {
   transform: scale(1.4);
   opacity: 0.5;
 }
@@ -126,6 +127,51 @@ main article {
   transition-property: transform;
   transition-duration: 600ms;
   opacity: 1;
+}
+
+/***** Couleurs text des div ****/
+/***** la note enchantée ****/
+#divlanote {
+  background-color: red;
+}
+#divlanote h2, #divlanote p {
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Dancing Script", cursive;
+}
+
+/***** Le chic à la française ****/
+#divlechic {
+  background-color: yellow;
+}
+#divlechic h2, #divlechic p {
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Dancing Script", cursive;
+}
+
+/***** la note enchantée ****/
+#divledelice {
+  background-color: blueviolet;
+}
+#divledelice h2, #divledelice p {
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Dancing Script", cursive;
+}
+
+/***** la note enchantée ****/
+#divlapalette {
+  background-color: green;
+}
+#divlapalette h2, #divlapalette p {
+  background: -webkit-linear-gradient(#eee, #333);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Dancing Script", cursive;
 }
 
 #containerbuton {
