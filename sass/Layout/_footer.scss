@@ -1,18 +1,20 @@
 footer {
 
     background-color: $couleur-hd-ft;
-    color: yellow;
+    color: $couleur-txt-dyn;
     position:fixed;
     bottom: 0px;
     width:100%;
     display: flex;
     justify-content: space-between;
     padding: 1% 0;
+    z-index: 1000;
 
     a {
 
         padding: 0 2%;
-        color:$couleur-bg-body;
+        color:$couleur-txt-dyn;
+        font-size: 1.5em;
 
     
 

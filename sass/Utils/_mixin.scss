@@ -8,8 +8,10 @@
 @mixin buton ($color) {
 
     background: $color;
-    padding: 10px;
-    border-radius: 20px;
+    padding:  5px 25px;
+    border-radius: 40px;
+  
+    
     
 }
 
@@ -41,14 +43,24 @@
     transform: scale(1);
     transition-property: transform;
     transition-duration: 600ms;
+    opacity: 1;
 
 }
 
 @mixin scalehover {
     
-    transform: scale(1.4)
+    transform: scale(1.4) ;
+    opacity: 0.5;
 }
 
+@mixin center {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
 
 
 

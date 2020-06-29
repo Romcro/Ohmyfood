@@ -39,11 +39,11 @@
   margin: 0;
   padding: 0;
   font-size: 14px;
-  text-align: center;
 }
 * h1 {
-  font-size: 2em;
+  font-size: 4em;
   font-family: "Krona One", sans-serif;
+  color: #f4ce25;
 }
 * h2 {
   font-size: 1.5em;
@@ -59,25 +59,27 @@
 }
 
 header {
-  background-color: green;
+  background-color: #00a808;
   text-align: center;
   color: yellow;
   padding: 2% 0;
 }
 
 footer {
-  background-color: green;
-  color: yellow;
+  background-color: #00a808;
+  color: #f4ce25;
   position: fixed;
   bottom: 0px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   padding: 1% 0;
+  z-index: 1000;
 }
 footer a {
   padding: 0 2%;
-  color: yellow;
+  color: #f4ce25;
+  font-size: 1.5em;
 }
 footer a:hover {
   animation: wiggle 2.5s infinite;
@@ -103,6 +105,12 @@ main a {
   align-items: center;
   justify-content: center;
 }
+main a h2 {
+  font-size: 2.5em;
+}
+main a p {
+  font-size: 1.5em;
+}
 main a:hover span {
   transform: scale(1.4);
   opacity: 0.5;
@@ -114,16 +122,104 @@ main span {
   height: 100%;
   height: auto;
   text-align: center;
-  opacity: 1;
   transform: scale(1);
   transition-property: transform;
   transition-duration: 600ms;
+  opacity: 1;
+}
+
+#containerbuton {
+  margin-bottom: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #comingsoon {
-  background: green;
-  padding: 10px;
-  border-radius: 20px;
+  background: #00a808;
+  padding: 5px 25px;
+  border-radius: 40px;
+  color: #f4ce25;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#comingsoon p {
+  font-size: 2em;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 2px;
+  background-color: #f4ce25;
+}
+
+#dotone {
+  animation: bounce1 1s ease infinite;
+}
+
+@keyframes bounce1 {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  30% {
+    transform: scale(0.9, 1.1) translateY(-5px);
+  }
+  50% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+#dottwo {
+  animation: bounce2 1s ease infinite;
+}
+
+@keyframes bounce2 {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1) translateY(0);
+  }
+  30% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  50% {
+    transform: scale(0.9, 1.1) translateY(-5px);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+#dotthree {
+  animation: bounce3 1s ease infinite;
+}
+
+@keyframes bounce3 {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(1.1) translateY(0);
+  }
+  30% {
+    transform: scale(1, 1) translateY(0);
+  }
+  50% {
+    transform: scale(1.1, 0.9) translateY(0);
+  }
+  70% {
+    transform: scale(0.9, 1.1) translateY(-5px);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
