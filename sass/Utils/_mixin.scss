@@ -127,21 +127,32 @@
     font-size: 3em;
     color: $color;
     margin-bottom: 1em;
+    display: inline-block;
+    position: relative;
+
  
 
     &:after {
         content: '';
-        display: block;
-        margin: auto;
-        height: 3px;
-        width: 0;
-        background: transparent;
-        transition: width .5s ease, background-color .5s ease;
-    }
+        position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 12px;
+  bottom: 0;
+  left: 0;
+  background-color: $color;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;}
+
+        
     &:hover:after {
-        width: 10%;
-        background: $color;
+
+        transform: scaleX(1);
+        transform-origin: bottom left;
+
+
     }
+
   
         
     
