@@ -1,0 +1,28 @@
+#mainmenu-ledelice {
+
+    @include main-menu ($couleur-ledelice);
+    
+    
+    #nommenu-ledelice {
+    
+        
+        
+        @include gradient-text-menu ($couleur-txt-ledelice,$font-ledelice);
+    
+    
+    }
+    
+    .categorie-ledelice {
+    
+        @include underlined($couleur-txt-ledelice,$font-ledelice)
+    }
+    }
+    
+    
+    .spanmenu {
+    
+    @include spanmenu;
+    
+    }
+    
+    

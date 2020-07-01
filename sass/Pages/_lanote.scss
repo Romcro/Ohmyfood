@@ -1,0 +1,26 @@
+#mainmenu-lanote {
+
+@include main-menu ($couleur-lanote);
+
+
+#nommenu-lanote {
+
+
+    @include gradient-text-menu ($couleur-txt-lanote,$font-lanote);
+
+
+}
+
+.categorie-lanote {
+
+    @include underlined($couleur-txt-lanote,$font-lanote)
+}
+}
+
+
+.spanmenu {
+
+@include spanmenu;
+
+}
+

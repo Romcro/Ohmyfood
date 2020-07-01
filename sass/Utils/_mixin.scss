@@ -22,13 +22,32 @@
    
 }
 
-@mixin gradient-text {
 
+
+@mixin gradient-text ($color) {
+
+    background: $color;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
 }
 
-@mixin main-menu {
+@mixin gradient-text-menu ($color, $font) {
+
+    background: $color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5em;
+    font-family: $font;
+    line-height: 4em;
+    
+
+    
+}
+
+
+
+@mixin main-menu ($color) {
 
     width: 80%;
     margin: 2% 10%;
@@ -36,8 +55,27 @@
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
+    background-color: $color;
+    margin-bottom: 15vh;
     @include box-shadow;
    
+    
+}
+
+@mixin spanmenu {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+    & p {
+
+        font-size: 1.5em;
+        line-height: 2em;
+    }
+
+    
     
 }
 
@@ -81,6 +119,33 @@
     opacity: 0.5;
 }
 
+@mixin underlined ($color,$font) {
+    
+
+
+    font-family: $font;
+    font-size: 3em;
+    color: $color;
+    margin-bottom: 1em;
+ 
+
+    &:after {
+        content: '';
+        display: block;
+        margin: auto;
+        height: 3px;
+        width: 0;
+        background: transparent;
+        transition: width .5s ease, background-color .5s ease;
+    }
+    &:hover:after {
+        width: 10%;
+        background: $color;
+    }
+  
+        
+    
+}
 
 
 

@@ -1,0 +1,27 @@
+#mainmenu-lechic {
+
+    @include main-menu ($couleur-lechic);
+    
+    
+    #nommenu-lechic {
+    
+ 
+        @include gradient-text-menu ($couleur-txt-lechic,$font-lechic);
+    
+    
+    }
+    
+    .categorie-lechic {
+    
+        @include underlined($couleur-txt-lechic,$font-lechic)
+    }
+    }
+    
+    
+    .spanmenu {
+    
+    @include spanmenu;
+    
+    }
+    
+    

@@ -4,35 +4,53 @@
     margin: 0;
     padding: 0;
     font-size: 14px;
+    font-family:$font-global;
+    color: $color-font;
     
 
     h1 {
 
     font-size: 4em;
-    font-family: 'Krona One', sans-serif;
+    font-family:$font-h1;
     color: $couleur-txt-dyn;
+
+    &:hover {
+
+        @include wiggle;
+    }
     }
 
     h2 {
 
         font-size: 1.5em;
-        font-family: 'MuseoModerno', cursive;
          
     }
 
     h3 {
 
         font-size: 1em;
-        font-family: 'MuseoModerno', cursive;
+
     
     }
 
     a{
 
     text-decoration: none;
-    font-family: 'MuseoModerno', cursive;
-    
-    
+
     
     } 
+
+
+}
+
+
+
+@media (max-width: 500px) {
+
+    h1 {
+
+        font-size: 3em;
+    }
+
+
 }

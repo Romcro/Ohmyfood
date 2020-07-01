@@ -1,19 +1,26 @@
 /***** Couleur de base *****/
+$font-global: 'MuseoModerno', cursive;
+$font-h1: 'Krona One', sans-serif;
+$color-font:hsl(0,1%,17%);
 $couleur-txt-dyn:hsl(49,90%,55%);
 $couleur-hd-ft:hsl(123,100%,33%);
 
 /***** Couleur La note Enchantée *****/
 $couleur-lanote:hsl(10,51%,90%);
 $couleur-txt-lanote:hsl(30,56%,25%);
+$font-lanote:'Pangolin', cursive;
 
 /***** Couleur Le chic à la française *****/
 $couleur-lechic:hsl(285,29%,95%);
 $couleur-txt-lechic:-webkit-linear-gradient(0.25turn,hsl(353,94%,62%), hsl(300,84%,25%));
+$font-lechic:'Caveat', cursive;
 
 /***** Couleur Le delice des papilles *****/
 $couleur-ledelice:hsl(0,0%,98%);
 $couleur-txt-ledelice:-webkit-radial-gradient(hsl(216,64%,56%), hsl(275,84%,25%),hsl(258,62%,30%));
+$font-ledelice:'Dancing Script', cursive;
 
 /***** Couleur La palette du gôut *****/
 $couleur-lapalette:hsl(120,100%,100%);
 $couleur-txt-lapalette:-webkit-linear-gradient( hsl(93,93%,36%) 0%, hsl(85,92%,28%) 45%, hsl(99,95%,46%) 100%);
+$font-lapalette:'Courgette', cursive;
