@@ -83,7 +83,7 @@
 header {
   background-color: #00a808;
   text-align: center;
-  color: yellow;
+  color: #f4ce25;
   padding: 2% 0;
 }
 
@@ -366,7 +366,9 @@ main article {
 #mainmenu-lanote .categorie-lanote {
   font-family: "Pangolin", cursive;
   font-size: 3em;
-  color: #63401c;
+  background: #63401c;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 1em;
   display: inline-block;
   position: relative;
@@ -420,7 +422,9 @@ main article {
 #mainmenu-lechic .categorie-lechic {
   font-family: "Caveat", cursive;
   font-size: 3em;
-  color: -webkit-linear-gradient(0.25turn, #f94358, #750a75);
+  background: -webkit-linear-gradient(0.25turn, #f94358, #750a75);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 1em;
   display: inline-block;
   position: relative;
@@ -474,7 +478,9 @@ main article {
 #mainmenu-ledelice .categorie-ledelice {
   font-family: "Dancing Script", cursive;
   font-size: 3em;
-  color: -webkit-radial-gradient(#4780d7, #490a75, #3a1d7c);
+  background: -webkit-radial-gradient(#4780d7, #490a75, #3a1d7c);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 1em;
   display: inline-block;
   position: relative;
@@ -528,7 +534,9 @@ main article {
 #mainmenu-lapalette .categorie-lapalette {
   font-family: "Courgette", cursive;
   font-size: 3em;
-  color: -webkit-linear-gradient(#53b106 0%, #528906 45%, #54e506 100%);
+  background: -webkit-linear-gradient(#53b106 0%, #528906 45%, #54e506 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   margin-bottom: 1em;
   display: inline-block;
   position: relative;

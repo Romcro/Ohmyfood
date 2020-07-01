@@ -125,7 +125,9 @@
 
     font-family: $font;
     font-size: 3em;
-    color: $color;
+    background: $color;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 1em;
     display: inline-block;
     position: relative;
