@@ -1,35 +1,31 @@
 #mainmenu-lapalette {
 
     @include main-menu ($couleur-lapalette);
-    
-    
+
+
     #nommenu-lapalette {
-    
- 
-        @include gradient-text-menu ($couleur-txt-lapalette,$font-lapalette);
-    
-    
+
+
+        @include gradient-text-menu ($couleur-txt-lapalette, $font-lapalette);
+
+
     }
-    
+
     .categorie-lapalette {
-    
-        @include underlined($couleur-txt-lapalette,$font-lapalette)
+
+        @include underlined($couleur-txt-lapalette, $font-lapalette)
     }
-    }
-    
-    
-    .spanmenu {
-    
+}
+
+
+.spanmenu {
+
     @include spanmenu;
-    
-    }
+
+}
 
 
-    .titrecategorie {
+.titrecategorie {
 
-        @include titrecategorie
-
-
-        }
-    
-    
+    @include titrecategorie
+}

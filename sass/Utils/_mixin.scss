@@ -1,52 +1,94 @@
+@mixin box-shadow
 
-@mixin box-shadow /*** A utiliser pour tous les box shadow ****/ {
+/*** A utiliser pour tous les box shadow ****/
+    {
 
-    box-shadow: 0px 1px 9px 1px hsl(34,27%,65%);
-    
+    box-shadow: 0px 1px 9px 1px hsl(34, 27%, 65%);
+
 }
 
-@mixin center /*** A utiliser pour tous les containers dont les élements doivent être centrés ****/{
+@mixin center
+
+/*** A utiliser pour tous les containers dont les élements doivent être centrés ****/
+    {
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    
+
 }
 
-@mixin buton ($color) /*** A utiliser pour tous les boutons, les couleurs peuvent être variées selon les pages ****/ {
+@mixin buton ($color)
+
+/*** A utiliser pour tous les boutons, les couleurs peuvent être variées selon les pages ****/
+    {
 
     background: $color;
-    padding:  5px 25px;
+    padding: 5px 25px;
     border-radius: 40px;
-   
+
 }
 
 
 
-@mixin gradient-text ($color) /*** A utiliser pour les titres de toutes DIV de présentation de la page d'accueil ****/ {
+@mixin gradient-text ($color)
+
+/*** A utiliser pour les titres de toutes DIV de présentation de la page d'accueil ****/
+    {
 
     background: $color;
+    font-size: 3em;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
+    @media (max-width: 768px) {
+
+        font-size: 2em;
+
+
+    }
+
 
 
 }
 
-@mixin gradient-text-menu ($color, $font) /*** A utiliser pour tous les titres de page ****/  {
+@mixin gradient-text-menu ($color, $font)
+
+/*** A utiliser pour tous les titres de page ****/
+    {
 
     background: $color;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: 5em;
     font-family: $font;
-    
 
-    
+
+    @media (max-width: 768px) {
+
+        font-size: 3em;
+
+
+    }
+
+    @media (max-width: 500px) {
+
+        font-size: 2em;
+
+
+    }
+
+
+
+
+
 }
 
-@mixin main-menu ($color) /*** A utiliser pour toutes les pages de menu ****/  {
+@mixin main-menu ($color)
+
+/*** A utiliser pour toutes les pages de menu ****/
+    {
 
     width: 80%;
     margin: 2% 10%;
@@ -58,58 +100,101 @@
     margin-bottom: 15vh;
     @include box-shadow;
 
-    & .logo /*** Class a utiliser pour tous les logos dans main menu ****/ {
+    & .logo
+
+    /*** Class a utiliser pour tous les logos dans main menu ****/
+        {
 
         width: 10%;
-        margin-left: auto;
-        margin-right: auto;
+        margin: auto;
+
 
     }
 
-    
-   
-    
-}
+    @media (max-width: 768px) {
 
-@mixin spanmenu /*** A utiliser pour tous les menus ****/ {
+        width: 90%;
+        margin: 2% 5% 15vh 5%;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
-
-    & p {
-
-        font-size: 1.5em;
-        line-height: 2em;
     }
 
-    
-    
+    @media (max-width: 767px) {
+
+        width: 96%;
+        margin: 2% 2% 15vh 2%;
+
+
+    }
+
+
+
+
+
+
 }
 
-@mixin titrecategorie  /*** A utiliser pour tous les titres de catégorie des pages de menu ****/{
+@mixin titrecategorie
+
+/*** A utiliser pour tous les titres de catégorie des pages de menu ****/
+    {
 
     padding-top: 2em;
     display: flex;
     flex-direction: row;
     justify-content: center;
- 
-    
+
+
 
     & img {
 
         width: 25%;
         padding-bottom: 2%;
         margin: 1em;
- 
-       
-       
 
     }
 
-    
+    @media (max-width: 768px) {
+
+        font-size: .8em;
+
+
+    }
+
+
+
 }
+
+@mixin spanmenu
+
+/*** A utiliser pour tous les menus ****/
+    {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: justify;
+
+
+    & p {
+
+        line-height: 2em;
+    }
+
+    & .price {
+
+        padding-left: 1em;
+        text-decoration: underline;
+    }
+
+
+
+
+
+
+
+}
+
+
 
 /*** ANIMATIONS CSS ***/
 
@@ -123,17 +208,49 @@
 }
 
 @keyframes wiggle {
-    0% { transform: rotate(0deg); }
-    20% { transform: rotate(0deg); }
-    25% { transform: rotate(5deg); }
-    35% { transform: rotate(-5deg); }
-   40% { transform: rotate(5deg); }
-   45% { transform: rotate(-5deg); }
-   50% { transform: rotate(0deg); }       
-   80% { transform: rotate(0deg); }
-   85% { transform: rotate(5deg); }
-   95% { transform: rotate(-5deg); }
-  100% { transform: rotate(0deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    35% {
+        transform: rotate(-5deg);
+    }
+
+    40% {
+        transform: rotate(5deg);
+    }
+
+    45% {
+        transform: rotate(-5deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    80% {
+        transform: rotate(0deg);
+    }
+
+    85% {
+        transform: rotate(5deg);
+    }
+
+    95% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
 
 
 
@@ -151,11 +268,11 @@
 
     &:hover {
 
-        transform: scale(1.4) ;
+        transform: scale(1.4);
 
 
     }
-    
+
 }
 
 /*** ANIMATIONS Scale (hover sur element parent)***/
@@ -172,15 +289,15 @@
 /*** ANIMATIONS Scale hover ( peut être utilisée par déclenchement sur un élement parents/voisins)***/
 
 @mixin scalehover {
-    
-    transform: scale(1.4) ;
+
+    transform: scale(1.4);
     opacity: 0.5;
 }
 
 /*** ANIMATIONS Underlined ***/
 
-@mixin underlined ($color,$font) {
-    
+@mixin underlined ($color, $font) {
+
 
 
     font-family: $font;
@@ -189,21 +306,22 @@
     position: relative;
 
 
- 
+
 
     &:after {
         content: '';
         position: absolute;
-  width: 100%;
-  transform: scaleX(0);
-  height: 3px;
-  bottom: 0;
-  left: 0;
-  background: $color;
-  transform-origin: bottom right;
-  transition: transform 0.35s ease-in;}
+        width: 100%;
+        transform: scaleX(0);
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background: $color;
+        transform-origin: bottom right;
+        transition: transform 0.35s ease-in;
+    }
 
-        
+
     &:hover:after {
 
         transform: scaleX(1);
@@ -212,19 +330,7 @@
 
     }
 
-  
-        
-    
+
+
+
 }
-
-
-
-
-
-
-
-
-
-
-
-

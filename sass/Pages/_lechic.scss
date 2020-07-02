@@ -1,41 +1,45 @@
 #mainmenu-lechic {
 
     @include main-menu ($couleur-lechic);
-    
-    
+
+
     #nommenu-lechic {
-    
- 
-        @include gradient-text-menu ($couleur-txt-lechic,$font-lechic);
-    
-    
+
+
+        @include gradient-text-menu ($couleur-txt-lechic, $font-lechic);
+
+
     }
-    
+
     .categorie-lechic {
-    
-        @include underlined($couleur-txt-lechic,$font-lechic)
+
+        @include underlined($couleur-txt-lechic, $font-lechic)
     }
 
-    }
-    
-    
-    .spanmenu {
-    
+}
+
+
+.spanmenu {
+
     @include spanmenu;
-    
-    }
 
-    .titrecategorie {
+}
 
-        @include titrecategorie;
-    
-    
-        }
+.titrecategorie {
 
-#section1 p{color:$couleur1}
+    @include titrecategorie;
 
-#section2 P{color:$couleur2}
 
-#section3 P{color:$couleur3}
-    
-    
+}
+
+#section1 p {
+    color: $couleur1
+}
+
+#section2 P {
+    color: $couleur2
+}
+
+#section3 P {
+    color: $couleur3
+}
