@@ -169,12 +169,14 @@ main {
 
     @include buton ($couleur-hd-ft);
     @include center;
+    @include normalscale;
+
 
 
     p {
 
         font-size: 2em;
-        margin-inline-end: 0.3em;
+        padding-right:.1em ;
         color: $couleur-txt-dyn;
 
     }

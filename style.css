@@ -47,6 +47,7 @@
   }
 }
 /*** ANIMATIONS Scale ***/
+/*** ANIMATIONS Scale (hover sur element parent)***/
 /*** ANIMATIONS Scale hover ( peut être utilisée par déclenchement sur un élement parents/voisins)***/
 /*** ANIMATIONS Underlined ***/
 /**** Typo la note enchantée ****/
@@ -57,7 +58,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-size: 14px;
+  font-size: 12px;
   font-family: "MuseoModerno", cursive;
   color: #2c2b2b;
 }
@@ -186,7 +187,7 @@ main article {
 }
 #divlechic h2,
 #divlechic p {
-  background: -webkit-linear-gradient(0.25turn, #f94358, #750a75);
+  background: -webkit-linear-gradient(#750a75, #f94358, #490a75);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -200,7 +201,7 @@ main article {
 }
 #divledelice h2,
 #divledelice p {
-  background: -webkit-radial-gradient(#4780d7, #490a75, #3a1d7c);
+  background: -webkit-radial-gradient(#4780d7, #3a1d7c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -236,10 +237,17 @@ main article {
   display: flex;
   align-items: center;
   justify-content: center;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 600ms;
+  opacity: 1;
+}
+#comingsoon:hover {
+  transform: scale(1.4);
 }
 #comingsoon p {
   font-size: 2em;
-  margin-inline-end: 0.3em;
+  padding-right: 0.1em;
   color: #f4ce25;
 }
 
@@ -379,7 +387,7 @@ main article {
 }
 #mainmenu-lanote .categorie-lanote {
   font-family: "Pangolin", cursive;
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 1em;
   position: relative;
 }
@@ -391,9 +399,9 @@ main article {
   height: 3px;
   bottom: 0;
   left: 0;
-  background: #63401c;
+  background: -webkit-linear-gradient(#e63228, #f59300);
   transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.35s ease-in;
 }
 #mainmenu-lanote .categorie-lanote:hover:after {
   transform: scaleX(1);
@@ -417,8 +425,9 @@ main article {
   justify-content: center;
 }
 .titrecategorie img {
-  width: 30%;
-  padding-bottom: 4%;
+  width: 25%;
+  padding-bottom: 2%;
+  margin: 1em;
 }
 
 #mainmenu-lechic {
@@ -438,7 +447,7 @@ main article {
   margin-right: auto;
 }
 #mainmenu-lechic #nommenu-lechic {
-  background: -webkit-linear-gradient(0.25turn, #f94358, #750a75);
+  background: -webkit-linear-gradient(#750a75, #f94358, #490a75);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 5em;
@@ -446,7 +455,7 @@ main article {
 }
 #mainmenu-lechic .categorie-lechic {
   font-family: "Caveat", cursive;
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 1em;
   position: relative;
 }
@@ -458,9 +467,9 @@ main article {
   height: 3px;
   bottom: 0;
   left: 0;
-  background: -webkit-linear-gradient(0.25turn, #f94358, #750a75);
+  background: -webkit-linear-gradient(#750a75, #f94358, #490a75);
   transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.35s ease-in;
 }
 #mainmenu-lechic .categorie-lechic:hover:after {
   transform: scaleX(1);
@@ -475,6 +484,30 @@ main article {
 .spanmenu p {
   font-size: 1.5em;
   line-height: 2em;
+}
+
+.titrecategorie {
+  padding-top: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.titrecategorie img {
+  width: 25%;
+  padding-bottom: 2%;
+  margin: 1em;
+}
+
+#section1 p {
+  color: #750a75;
+}
+
+#section2 P {
+  color: #f94358;
+}
+
+#section3 P {
+  color: #490a75;
 }
 
 #mainmenu-ledelice {
@@ -494,7 +527,7 @@ main article {
   margin-right: auto;
 }
 #mainmenu-ledelice #nommenu-ledelice {
-  background: -webkit-radial-gradient(#4780d7, #490a75, #3a1d7c);
+  background: -webkit-radial-gradient(#4780d7, #3a1d7c);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 5em;
@@ -502,7 +535,7 @@ main article {
 }
 #mainmenu-ledelice .categorie-ledelice {
   font-family: "Dancing Script", cursive;
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 1em;
   position: relative;
 }
@@ -514,9 +547,9 @@ main article {
   height: 3px;
   bottom: 0;
   left: 0;
-  background: -webkit-radial-gradient(#4780d7, #490a75, #3a1d7c);
+  background: -webkit-radial-gradient(#4780d7, #3a1d7c);
   transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.35s ease-in;
 }
 #mainmenu-ledelice .categorie-ledelice:hover:after {
   transform: scaleX(1);
@@ -531,6 +564,18 @@ main article {
 .spanmenu p {
   font-size: 1.5em;
   line-height: 2em;
+}
+
+.titrecategorie {
+  padding-top: 2em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.titrecategorie img {
+  width: 25%;
+  padding-bottom: 2%;
+  margin: 1em;
 }
 
 #mainmenu-lapalette {
@@ -558,7 +603,7 @@ main article {
 }
 #mainmenu-lapalette .categorie-lapalette {
   font-family: "Courgette", cursive;
-  font-size: 3em;
+  font-size: 2em;
   margin-bottom: 1em;
   position: relative;
 }
@@ -572,7 +617,7 @@ main article {
   left: 0;
   background: -webkit-linear-gradient(#53b106 0%, #528906 45%, #54e506 100%);
   transform-origin: bottom right;
-  transition: transform 0.25s ease-out;
+  transition: transform 0.35s ease-in;
 }
 #mainmenu-lapalette .categorie-lapalette:hover:after {
   transform: scaleX(1);
@@ -596,8 +641,9 @@ main article {
   justify-content: center;
 }
 .titrecategorie img {
-  width: 30%;
-  padding-bottom: 4%;
+  width: 25%;
+  padding-bottom: 2%;
+  margin: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */

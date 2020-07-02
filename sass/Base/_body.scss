@@ -3,9 +3,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-size: 14px;
+    font-size: 12px;
     font-family:$font-global;
     color: $color-font;
+
     
 
     h1 {
@@ -39,6 +40,13 @@
 
     
     } 
+
+
+}
+
+@media (max-width: 1024px) {
+
+
 
 
 }

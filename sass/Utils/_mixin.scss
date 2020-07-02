@@ -65,6 +65,8 @@
         margin-right: auto;
 
     }
+
+    
    
     
 }
@@ -97,8 +99,9 @@
 
     & img {
 
-        width: 30%;
-        padding-bottom: 4%;
+        width: 25%;
+        padding-bottom: 2%;
+        margin: 1em;
  
        
        
@@ -136,7 +139,26 @@
 
 }
 
+
 /*** ANIMATIONS Scale ***/
+
+@mixin normalscale {
+
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 600ms;
+    opacity: 1;
+
+    &:hover {
+
+        transform: scale(1.4) ;
+
+
+    }
+    
+}
+
+/*** ANIMATIONS Scale (hover sur element parent)***/
 
 @mixin scale {
 
@@ -162,7 +184,7 @@
 
 
     font-family: $font;
-    font-size: 3em;
+    font-size: 2em;
     margin-bottom: 1em;
     position: relative;
 
@@ -179,7 +201,7 @@
   left: 0;
   background: $color;
   transform-origin: bottom right;
-  transition: transform 0.25s ease-out;}
+  transition: transform 0.35s ease-in;}
 
         
     &:hover:after {
