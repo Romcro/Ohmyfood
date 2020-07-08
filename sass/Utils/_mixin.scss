@@ -38,7 +38,7 @@
     {
 
     background: $color;
-    font-size: 3em;
+    font-size: 2.5em;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
@@ -127,6 +127,41 @@
     }
 
 
+}
+
+@mixin logoinline {
+    @include center;
+    margin-bottom: 15vh;
+
+
+
+    p {
+        font-size: 3em;
+        font-family: $font-lanote;
+        color: $couleur-txt-lanote;
+
+
+    }
+
+    img {
+
+        width: 5%;
+        margin-right: 1em;
+    }
+
+    @media (max-width: 768px) {
+
+        p {
+
+            font-size: 2em;
+        }
+
+        
+
+
+    }
+
+    
 }
 
 @mixin titrecategorie
@@ -286,7 +321,7 @@
 
 @mixin scalehover {
 
-    transform: scale(1.4);
+    transform: scale(1.2);
     opacity: 0.5;
 }
 

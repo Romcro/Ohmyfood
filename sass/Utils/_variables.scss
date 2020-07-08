@@ -13,16 +13,14 @@ $couleur-body:hsl(0, 0%, 100%);
 /***** Couleur La note Enchantée *****/
 $couleur-lanote:hsl(10, 51%, 90%);
 $couleur-txt-lanote:hsl(30, 56%, 25%);
-$font-lanote:'Pangolin',
-cursive;
-$couleur-dgd-lanote: -webkit-linear-gradient(hsl(3, 79%, 53%), hsl(353, 94%, 62%));
+$font-lanote: 'Devonshire', cursive;
+$couleur-dgd-lanote: linear-gradient(0.25turn,hsl(39, 79%, 53%), hsl(353, 94%, 62%),hsl(39, 79%, 53%));
 
 
 /***** Couleur Le chic à la française *****/
 $couleur-lechic:hsl(285, 29%, 95%);
-$couleur-txt-lechic:-webkit-linear-gradient(hsl(26,61%,43%), hsl(299,19%,50%), hsl(252,52%,54%));
-$font-lechic:'Caveat',
-cursive;
+$couleur-txt-lechic:linear-gradient(0.25turn,hsl(26,61%,43%), hsl(299,19%,50%), hsl(252,52%,54%));
+$font-lechic: 'Croissant One', cursive;
 $couleur1:hsl(26,61%,43%);
 $couleur2: hsl(299,19%,50%);
 $couleur3:hsl(252,52%,54%);
@@ -30,12 +28,11 @@ $couleur3:hsl(252,52%,54%);
 
 /***** Couleur Le delice des papilles *****/
 $couleur-ledelice:hsl(0, 0%, 98%);
-$couleur-txt-ledelice:-webkit-radial-gradient(hsl(216, 64%, 56%), hsl(258, 62%, 30%));
+$couleur-txt-ledelice:radial-gradient(closest-side,hsl(216, 48%, 56%), hsl(258, 62%, 30%));
 $font-ledelice:'Dancing Script',
 cursive;
 
 /***** Couleur La palette du gôut *****/
 $couleur-lapalette:hsl(120, 100%, 100%);
-$couleur-txt-lapalette:-webkit-linear-gradient(hsl(93, 93%, 36%) 0%, hsl(85, 92%, 28%) 45%, hsl(99, 95%, 46%) 100%);
-$font-lapalette:'Courgette',
-cursive;
+$couleur-txt-lapalette:linear-gradient(0.75turn,hsl(93, 93%, 36%) 0%, hsl(85, 92%, 28%) 45%, hsl(99, 95%, 46%) 100%);
+$font-lapalette: 'Kaushan Script', cursive;

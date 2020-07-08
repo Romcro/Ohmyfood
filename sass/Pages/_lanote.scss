@@ -33,25 +33,7 @@
 
 #div-logo-inline {
 
-    @include center;
-    margin-bottom: 15vh;
-
-
-
-    p {
-        font-size: 3em;
-        font-family: $font-lanote;
-        color: $couleur-txt-lanote;
-
-
-    }
-
-    img {
-
-        width: 3%;
-        margin-right: 1em;
-    }
-
+@include logoinline;
 
 
 }
