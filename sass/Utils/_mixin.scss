@@ -64,6 +64,13 @@
     font-size: 5em;
     font-family: $font;
 
+    @media (max-width: 1024px) {
+
+        font-size: 3.5em;
+
+
+    }
+
 
     @media (max-width: 768px) {
 
