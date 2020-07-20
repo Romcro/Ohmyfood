@@ -102,12 +102,15 @@ main {
 
 
         @include gradient-text ($couleur-txt-lechic);
+        
 
 
     }
 
     & h2 {
         font-family: $font-lechic;
+        max-width: 80%;
+        margin: auto;
 
     }
 
