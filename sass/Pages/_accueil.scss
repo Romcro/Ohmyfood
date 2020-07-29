@@ -9,12 +9,9 @@ main {
 
 
 
-    div {
+    .divaccueil {
 
-        @include box-shadow;
-        width: 35%;
-        margin: 2%;
-        height: 80vh;
+        @include divaccueil;
 
     }
 

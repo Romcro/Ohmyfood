@@ -7,6 +7,15 @@
 
 }
 
+@mixin divaccueil {
+
+    @include box-shadow;
+    width: 35%;
+    margin: 2%;
+    height: 80vh;
+    
+}
+
 @mixin center
 
 /*** A utiliser pour tous les containers dont les élements doivent être centrés ****/
@@ -209,7 +218,7 @@
 
 }
 
-@mixin spanmenu
+@mixin divmenu
 
 /*** A utiliser pour tous les menus ****/
     {
